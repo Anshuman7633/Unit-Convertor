@@ -1,0 +1,96 @@
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #4CAF50;
+  }
+  50% {
+    background-color: #FFD700;
+  }
+  100% {
+    background-color: #4CAF50;
+  }
+}
+
+.converter:hover {
+  animation: rotate 2s linear infinite;
+}
+
+.bg-circle {
+  animation: color-change 5s linear infinite;
+}
+
+.fancy {
+  color: #FFD700;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+}
+
+select option {
+  color: #000;
+  font-weight: bold;
+}
+
+.convert-to {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.convert-to label,
+.convert-to select {
+  color: #fff;
+}
+
+.design-element {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #FFD700;
+  opacity: 0.5;
+  animation: fade-in-out 4s linear infinite;
+}
+
+.design-element1 {
+  top: -100px;
+  left: -100px;
+  animation-delay: 0s;
+}
+
+.design-element2 {
+  bottom: -100px;
+  right: -100px;
+  animation-delay: 2s;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
